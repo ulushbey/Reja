@@ -1,1 +1,255 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS!</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left-icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector.svg" class="icon_1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-1.svg" class="icon_1" />
+                </div>
+              </a>
+            </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/Vector-2.svg" class="icon_1" />
+              </div>
+            </a>
+          </a>
+          <a class="link_href" href="">
+            <div class="icon">
+              <img src="icon/Vector-3.svg" class="icon_1" />
+            </div>
+          </a>
+        </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/Vector-4.svg" class="icon_1" />
+              </div>
+            </a>
+          </a>
+          <a class="link_href" href="">
+          <div class="icon">
+            <img src="icon/Vector-5.svg" class="icon_1" />
+          </div>
+          </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_2-1">
+              <div style="background-color: orange;">Age:</div>
+              <div>24</div>
+            </div>
+            <div class="left_2-2">
+              <div style="background-color: orange;">Residence:</div>
+              <div>BD</div>
+            </div><div class="left_2-3">
+              <div style="background-color: orange;">Freelance:</div>
+              <div style="color: #7EB942;">Available</div>
+            </div><div class="left_2-4">
+              <div style="background-color: orange;">Address:</div>
+              <div>Dhaka, Bangladesh</div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_3">
+            <h2>Languages</h2>
+            <div class="left_3-lang">
+              <div class="text">
+                <p><%=user.languages[0]%></p>
+                <p>100%</p>
+              </div>
+              <div class="progress-1">
+              </div>
+            </div>
+            <div class="left_3-lang">
+              <div class="text">
+                <p><%=user.languages[1]%></p>
+                <p>80%</p>
+              </div>
+              <div class="progress-2">
+              </div>
+            </div>
+            <div class="left_3-lang">
+              <div class="text">
+                <p><%=user.languages[2]%></p>
+                <p>60%</p>
+              </div>
+              <div class="progress-3">
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+              <h2>Skills</h2>
+              <div class="left_4-lang">
+                <div class="text">
+                  <p><%=user.skills[0]%></p>
+                  <p>90%</p>
+                </div>
+                <div class="progress-1">
+                </div>
+              </div>
+              <div class="left_4-lang">
+                <div class="text">
+                  <p><%=user.skills[1]%></p>
+                  <p>85%</p>
+                </div>
+                <div class="progress-2">
+                </div>
+              </div>
+              <div class="left_4-lang">
+                <div class="text">
+                  <p><%=user.skills[2]%></p>
+                  <p>80%</p>
+                </div>
+                <div class="progress-3">
+                </div>
+              </div>
+              <div class="left_4-lang">
+                  <div class="text">
+                    <p><%=user.skills[3]%></p>
+                    <p>75%</p>
+                  </div>
+                <div class="progress-4">
+                </div>
+              </div>
+              <div class="left_4-lang">
+                <div class="text">
+                  <p><%=user.skills[4]%></p>
+                  <p>85%</p>
+                </div>
+                <div class="progress-5">
+                </div>
+              </div>
+          </div>
+
+          <div class="marginer"></div>
+          <div class="left_5">
+            <h2>Extra skills</h2>
+              <div class="left_5-lang">
+                <div class="text">
+                <div class="left_skills"> 
+                  <img src="icon/box/iconcha.svg" alt="">
+                  <p><%=user.extra_skills[0]%></p>
+                </div>
+                <div class="left_skills">
+                  <img src="icon/box/iconcha.svg" alt="">
+                  <p><%=user.extra_skills[1]%></p>
+                </div>
+                <div class="left_skills">
+                  <img src="icon/box/iconcha.svg" alt="">
+                  <p><%=user.extra_skills[2]%></p>
+                </div>
+                <div class="left_skills">
+                  <img src="icon/box/iconcha.svg" alt="">
+                  <p><%=user.extra_skills[3]%></p>
+                </div>  
+                </div>
+                <div class="progress-1">
+                </div>
+              </div>
+          </div>
+          <div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+          <div class="about-me">
+            <div>
+              <h2>Doctor Neurologists in OHSU Hospital</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Et, volutpat feugiat placerat lobortis. 
+                Natoque rutrum semper sed suspendise nunc lectuss.</p>
+              <button>HIRE ME</button>
+            </div>
+            <div style="height: 100px; width: 100px;">
+              <img src="images/jacob.png" alt="">
+            </div>
+          </div>
+          <div class="services">
+            <div class="info">
+              <h2>My Services</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+               Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+            </div>
+            <div class="box">
+              <div class="inner-box">
+                <img src="icon/box/first.svg" alt="">
+                <h4>Web Development</h4>
+                <p>Blog, E-Commerce</p>
+              </div>
+              <div class="inner-box">
+                <img src="icon/box/second.svg" alt="">
+                <h4>UI/UX Design</h4>
+                <p>Mobile App, Website Design</p>
+              </div>
+              <div class="inner-box">
+                <img src="icon/box/third.svg" alt="">
+                <h4>Sound Design</h4>
+                <p>Voice Over, Beat Making</p>
+              </div>
+              <div class="inner-box">
+                <img src="icon/box/fourth.svg" alt="">
+                <h4>Game Design</h4>
+                <p>Character Design, Props & Objects</p>
+              </div>
+              <div class="inner-box">
+                <img src="icon/box/fifth.svg" alt="">
+                <h4>Photography</h4>
+                <p>Portrait, Product, Photgraphy</p>
+              </div>
+              <div class="inner-box">
+                <h4>Advertising</h4>
+                <p>Lorem ipsum Dolor sit Amer. Consectetur
+                  Adjising Elit. Vitae Nulla Diam 
+                  In Ac Dictum A uma virera Morbi.</p>
+                  <img src="icon/box/six.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <div class="right_1">
+            <div class="icon"><img src="icon/box/Homee.svg" alt=""></div>
+            <div class="icon"><img src="icon/box/Service.svg" alt=""></div>
+            <div class="icon"><img src="icon/box/Cv.svg" alt=""></div>
+            <div class="icon"><img src="icon/box/Portfolio.svg" alt=""></div>
+            <div class="icon"><img src="icon/box/Blog.svg" alt=""></div>
+            <div class="icon"><img src="icon/box/Contact.svg" alt=""></div>
+            
+  
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
