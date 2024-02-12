@@ -1,7 +1,7 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
 const app = express();
-const res = require("express/lib/response");
+// const res = require("express/lib/response");
 
 // const fs = require("fs"); // 
 
@@ -10,7 +10,6 @@ const db = require("./server").db();
 
 // let user;
 // fs.readFile("database/user.json", "utf8", (err, data) => {
-
 //   if (err) {
 //     console.log("ERROR:", err);
 //   } else {
@@ -33,7 +32,7 @@ app.set("view engine", "ejs");
 app.post("/create-item", (req, res) => {
   console.log('user entered /create-item');
   const new_reja = req.body.reja;
-  db.collection("plans").insertOne({reja: new_reja},(err,data) =>{
+  db.collection("plans").insertOne({reja: new_reja}, (err,data) =>{
   if(err){
     console.log(err);
     res.end("something went wrong");
@@ -42,7 +41,6 @@ app.post("/create-item", (req, res) => {
     res.end("successfully added");
   }
 });
- //res.json({ test: "success" });
 });
 
 // app.get("/author", (req, res) => {
@@ -68,7 +66,6 @@ app.get("/", function (req, res) {
       console.log(err);
       res.end("something went wrong");
     }else {
-      
       res.render("reja", {items:data});
     }
   }) ;
