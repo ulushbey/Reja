@@ -3,12 +3,14 @@
 function countDigits(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
-      count++;
+      if (str[i] >= '0' && str[i] <= '9') {
+          count++;
+      }
   }
   return count;
 }
 
-const str = "MeningismimJacob"
+const str = "kmkwdwkmkwelm3455"
 console.log("result:", countDigits(str));
 
 
