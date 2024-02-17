@@ -1,74 +1,79 @@
+//MIT Task D
 
+function check(str1, str2) {
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
+}
+
+console.log(check("ulugbek", "bekulug"));
 
 // //Task C
 
-class Shop {
-  // State
-  non;
-  lagmon;
-  cola;
-  
-  // Constructor
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
-  
-  // Methods
-  qoldiq1() {
-    const now = new Date();
-    console.log(`Hozirgi vaqtda ${now.toLocaleTimeString()} bizda ${this.non} dona non, ${this.lagmon}ta lagmon, va ${this.cola} dona kola mavjud`);
-  }
-  
-  sell(product, quantity) {
-    const now = new Date();
-    switch(product) {
-      case 'non':
-        this.bread -= quantity;
-        break;
-      case 'lagmon':
-        this.lagmon -= quantity;
-        break;
-      case 'cola':
-        this.cola -= quantity;
-        break;
-      default:
-        return;
-    }
-    console.log(`Hozirgi vaqt soat ${now.toLocaleTimeString()}da ${quantity}ta ${product} sotildi.`);
-  }
-  
-  accept(product, quantity) {
-    const now = new Date();
-    switch(product) {
-      case 'non':
-        this.bread += quantity;
-        break;
-      case 'lagmon':
-        this.lagmon += quantity;
-        break;
-      case 'cola':
-        this.cola += quantity;
-        break;
-      default:
-        return;
-    }
-    console.log(`Soat ${now.toLocaleTimeString()}da ${quantity} dona ${product} qabul qilindi.`);
-  }
-  
-  qoldiq2() {
-    const now = new Date();
-    console.log(`Hozir ${now.toLocaleTimeString()}da ${this.non} dona non,  ${this.lagmon}ta lag'mon va ${this.cola} dona kola qoldi`);
-  }
-}
+// class Shop {
+//   // State
+//   non;
+//   lagmon;
+//   cola;
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq1(); 
-shop.sell('non', 3); 
-shop.accept('cola', 4); 
-shop.qoldiq2(); 
+//   // Constructor
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
+//   // Methods
+//   qoldiq1() {
+//     const now = new Date();
+//     console.log(`Hozirgi vaqtda ${now.toLocaleTimeString()} bizda ${this.non} dona non, ${this.lagmon}ta lagmon, va ${this.cola} dona kola mavjud`);
+//   }
+
+//   sell(product, quantity) {
+//     const now = new Date();
+//     switch(product) {
+//       case 'non':
+//         this.bread -= quantity;
+//         break;
+//       case 'lagmon':
+//         this.lagmon -= quantity;
+//         break;
+//       case 'cola':
+//         this.cola -= quantity;
+//         break;
+//       default:
+//         return;
+//     }
+//     console.log(`Hozirgi vaqt soat ${now.toLocaleTimeString()}da ${quantity}ta ${product} sotildi.`);
+//   }
+
+//   accept(product, quantity) {
+//     const now = new Date();
+//     switch(product) {
+//       case 'non':
+//         this.bread += quantity;
+//         break;
+//       case 'lagmon':
+//         this.lagmon += quantity;
+//         break;
+//       case 'cola':
+//         this.cola += quantity;
+//         break;
+//       default:
+//         return;
+//     }
+//     console.log(`Soat ${now.toLocaleTimeString()}da ${quantity} dona ${product} qabul qilindi.`);
+//   }
+
+//   qoldiq2() {
+//     const now = new Date();
+//     console.log(`Hozir ${now.toLocaleTimeString()}da ${this.non} dona non,  ${this.lagmon}ta lag'mon va ${this.cola} dona kola qoldi`);
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq1();
+// shop.sell('non', 3);
+// shop.accept('cola', 4);
+// shop.qoldiq2();
 
 // //Task B
 
@@ -84,9 +89,6 @@ shop.qoldiq2();
 
 // const str = "kmkwdwkmkwelm3455"
 // console.log("result:", countDigits(str));
-
-
-
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
