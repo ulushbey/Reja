@@ -1,10 +1,22 @@
-//MIT Task D
+//MIT TASK E
 
-function check(str1, str2) {
-  return str1.split("").sort().join("") === str2.split("").sort().join("");
+function getReverse(str) {
+  return str.split('').reverse().join('');
 }
 
-console.log(check("ulugbek", "bekulug"));
+console.log(getReverse("hello")); 
+
+
+
+
+
+// //MIT Task D
+
+// function check(str1, str2) {
+//   return str1.split("").sort().join("") === str2.split("").sort().join("");
+// }
+
+// console.log(check("ulugbek", "bekulug"));
 
 // //Task C
 
