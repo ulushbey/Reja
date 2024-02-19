@@ -1,4 +1,4 @@
-//MIT TASK E
+//MIT TASK E 
 
 function getReverse(str) {
   return str.split('').reverse().join('');
@@ -147,14 +147,6 @@ console.log(getReverse("hello"));
 // //             setInterval(() => {
 // //                 resolve(list[5])
 // //             }, 1000);
-
-// //             // setTimeout(() => {
-// //             //     resolve(list[5])
-// //             // }, 5000);
-// //         });
-
-// //      }
-// // }
 
 // // maslahatBering(10, (err, data) => {
 // //     if(err) console.log("ERROR", err);
