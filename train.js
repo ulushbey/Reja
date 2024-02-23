@@ -1,12 +1,8 @@
-//MIT Task F
+//MIT Task G
 
-function findDoublers(str) {
-  const x = str.split('');
-
-  return x.some((value, index) => x.indexOf(value) !== index);
+function getHighestIndex(arr) {
+  const sortedArr = arr.slice().sort((a, b) => b - a);
+  return arr.indexOf(sortedArr[0]);
 }
 
-
-console.log(findDoublers("hello")); 
-console.log(findDoublers("ulugbek"));
-console.log(findDoublers("mehrojj"));
+console.log(getHighestIndex([5, 21, 12, 21, 8]));
